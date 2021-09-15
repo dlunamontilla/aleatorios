@@ -1,3 +1,7 @@
+<?php
+include __DIR__ . "/app/index.php";
+?>
+
 <!DOCTYPE html>
 <html lang="es-VE" prefix="og: https://ogp.me/ns#">
 
@@ -26,7 +30,13 @@
 
 <body>
   <main id="app">
-    <!-- Escriba a aquí su código -->
+    <header class="header">
+      <h2>Encontrar Número Ganador</h2>
+
+      <div class="buttons">
+        <button class="button button--ganador">Encontrar al ganador</button>
+      </div>
+    </header>
   </main>
 
   <script src="app/js/main.js" type="module"></script>

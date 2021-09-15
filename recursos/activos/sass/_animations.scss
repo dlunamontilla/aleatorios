@@ -1,0 +1,12 @@
+@keyframes fadeIn {
+    from {
+        // transform: scale(0.98) rotateY(-60deg) translateX(40%);
+        transform: rotateY(60deg);
+        opacity: 0;
+    }
+}
+
+.fadeIn {
+    animation: 700ms cubic-bezier(0, 1, 0, 1.4) fadeIn 1;
+    opacity: 1;
+}

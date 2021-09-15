@@ -1,0 +1,76 @@
+.numeros {
+    --gap: 15px;
+
+    display: grid;
+    gap: var(--gap);
+    width: $width;
+    max-width: $max-width;
+    margin: 0 auto;
+    overflow: hidden;
+
+    grid-template-columns: repeat(auto-fill, minmax(70px, 1fr));
+
+    padding: calc(var(--gap) * 2);
+    border-radius: 4px;
+
+    $color: lighten($color-base, 40);
+    background-image: linear-gradient(200deg, rgba(#f0c000, 1), #f06600);
+    background-color: $color-secundario;
+    perspective: 700px;
+
+    border: 1px solid white;
+    box-shadow: 0 0 10px white;
+
+    &__item {
+        min-height: 50px;
+        opacity: 0;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        font: {
+            size: 1.3rem;
+        }
+
+        background-color: white;
+        border: 3px solid transparent;
+        border-radius: 5px;
+
+        transform-origin: left center;
+    }
+}
+
+.header {
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgba(white, 0.2);
+    padding: 0 10px;
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    background-color: rgba(white, 0.2);
+    min-height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.button {
+    &:hover {
+        color: blue;
+        background-color: lighten(blue, 45);
+    }
+
+    &:active {
+        box-shadow: inset 0 0 4px blue;
+        transition: none;
+    }
+}

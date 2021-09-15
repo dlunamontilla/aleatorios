@@ -1,0 +1,21 @@
+.button {
+    &--ganador {
+        --height: 50px;
+
+        background-color: transparent;
+        border: 1px solid rgba(white, 0.3);
+
+        color: white;
+        transition: 300ms ease;
+        height: var(--height);
+        padding: 0 20px;
+
+        border-radius: calc(var(--height) / 2);
+        font: inherit;
+
+        &:hover {
+            background-color: $color-base;
+            color: white;
+        }
+    }
+}
